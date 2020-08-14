@@ -9,12 +9,23 @@
 
 namespace kb
 {
+	//	‚RŸŒ³“_ŒQ‚Æ‚µ‚Ä•Û‘¶
+	int save_as_ply(
+		std::string& path,
+		std::vector<float>& v_pt,
+		std::vector<unsigned char>& vcolor);
+	//	‚RŸŒ³“_ŒQ‚Æ‚µ‚Ä•Û‘¶
+	int save_as_ply(
+		std::string& path,
+		std::vector<float>& v_pt);
+
 	//	ƒƒbƒVƒ…‚Æ‚µ‚Ä•Û‘¶
 	int save_mesh_as_ply(
 		std::string& path,
 		std::vector<float>& vec_pos,
 		std::vector<int>& vec_idx);
 
+	//	ƒƒbƒVƒ…‚Æ‚µ‚Ä“Ç‚İ‚Ş
 	int load_mesh_as_ply(
 		std::string& path,
 		std::vector<float>& vec_pos,
